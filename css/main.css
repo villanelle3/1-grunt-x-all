@@ -4,6 +4,11 @@ body {
 
 h1 {
   color: green;
+  margin: 0 auto;
+}
+
+h2 {
+  color: green;
 }
 
 /*# sourceMappingURL=main.css.map */
