@@ -120,4 +120,76 @@ body {
   transform: rotateZ(45deg) scaleX(1.187) translate(-4px, -4px);
 }
 
+@media screen and (max-width: 767px) {
+  #container1 h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+  .btn-menu {
+    top: 5px;
+    right: 0px;
+  }
+  .btn-left {
+    width: 15px;
+    height: 5px;
+    background-color: white;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+  }
+  .btn-left:before {
+    position: absolute;
+    width: 15px;
+    height: 5px;
+    background-color: white;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    content: "";
+    top: -15px;
+  }
+  .btn-left:after {
+    width: 15px;
+    height: 5px;
+    background-color: white;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    content: "";
+    top: 15px;
+  }
+  .btn-right {
+    width: 15px;
+    height: 5px;
+    background-color: white;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    top: 25px;
+    left: 15.5px;
+  }
+  .btn-right:before {
+    width: 15px;
+    height: 5px;
+    background-color: white;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    content: "";
+    top: -15px;
+  }
+  .btn-right:after {
+    width: 15px;
+    height: 5px;
+    background-color: white;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    content: "";
+    top: 15px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
