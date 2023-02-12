@@ -1,1 +1,1 @@
-body{background-color:purple}h1{color:green;margin:0 auto}h2{color:green}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Roboto,sans-serif}body{background-color:#f4eeff}#container1{background-color:#424874}#container1 h1{font-family:Kanit,sans-serif;color:#fff;font-weight:700;text-shadow:1px 1px 2px #dcd6f7;padding:16px;text-align:center}

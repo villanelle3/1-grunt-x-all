@@ -1,11 +1,32 @@
-$verde:green;
+@import "var";
+@import "reset";
+
+@function soma($numeros...) {
+    $soma: 0;
+    @each $numero in $numeros {
+        $soma: $soma + $numero;
+    }
+    @return $soma;
+}
+
+@mixin bold {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px $shade2;
+}
+
 body {
-    background-color: purple;
+    background-color: $shade1;
 }
-h1{
-    color: $verde;
-    margin: 0 auto;
+
+#container1{
+    background-color: $shade4;
+    h1{
+        font-family: 'Kanit', sans-serif;
+        @include bold;
+        padding: 16px;
+        text-align: center;
+    }
 }
-h2{
-    color: $verde;
-}
+
+
