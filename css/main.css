@@ -21,4 +21,103 @@ body {
   text-align: center;
 }
 
+.btn-menu {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 8px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.btn-left {
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+}
+.btn-left:before {
+  position: absolute;
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  position: absolute;
+  content: "";
+  top: -15px;
+}
+.btn-left:after {
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  position: absolute;
+  content: "";
+  top: 15px;
+}
+
+.btn-right {
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.btn-right:before {
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  position: absolute;
+  content: "";
+  top: -15px;
+}
+.btn-right:after {
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  position: absolute;
+  content: "";
+  top: 15px;
+}
+
+.active .btn-left {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: transparent;
+}
+.active .btn-left:before {
+  -webkit-transform: rotateZ(45deg) scaleX(1.187) translate(4px, 4px);
+  transform: rotateZ(45deg) scaleX(1.187) translate(4px, 4px);
+}
+.active .btn-left:after {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.187) translate(4px, -4px);
+  transform: rotateZ(-45deg) scaleX(1.187) translate(4px, -4px);
+}
+.active .btn-right {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: transparent;
+}
+.active .btn-right:before {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.187) translate(-4px, 4px);
+  transform: rotateZ(-45deg) scaleX(1.187) translate(-4px, 4px);
+}
+.active .btn-right:after {
+  -webkit-transform: rotateZ(45deg) scaleX(1.187) translate(-4px, -4px);
+  transform: rotateZ(45deg) scaleX(1.187) translate(-4px, -4px);
+}
+
 /*# sourceMappingURL=main.css.map */
